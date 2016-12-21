@@ -1,0 +1,37 @@
+{
+  "name": "koa-xtpl",
+  "version": "1.0.0",
+  "description": "A node.js wrapper around xtemplate engine (easier for Koa)",
+  "main": "lib",
+  "scripts": {
+    "test": "node test/return.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/koa-xtpl.git"
+  },
+  "keywords": [
+    "xtemplate",
+    "xtpl",
+    "koa",
+    "koajs",
+    "zce",
+    "wedn",
+    "wedn.net",
+    "micua",
+    "micua.com",
+    "汪磊"
+  ],
+  "author": "iceStone <ice@micua.com> (http://www.micua.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zce/koa-xtpl/issues"
+  },
+  "homepage": "https://github.com/zce/koa-xtpl#readme",
+  "dependencies": {
+    "node-xtemplate": "^0.1.2"
+  },
+  "devDependencies": {
+    "koa": "^1.2.4"
+  }
+}
