@@ -25,7 +25,7 @@
 ## Install
 
 ```sh
-$ npm install --save koa-xtpl
+$ npm install --save koa-xtpl@next
 ```
 
 
@@ -42,12 +42,12 @@ demo.js
 const path = require('path')
 const Koa = require('koa')
 const xtpl = require('../')
-const app = Koa()
+const app = new Koa()
 
 app.use(xtpl({ root: path.join(__dirname, 'views') }))
 
-app.use(function *(){
-  yield this.render('demo', { title: new Date() })
+app.use(async ctx => {
+  await ctx.render('demo', { title: new Date() })
 })
 
 app.listen(3000)
