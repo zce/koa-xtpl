@@ -11,7 +11,7 @@
 [npm-url]: https://npmjs.org/package/koa-xtpl
 [download-image]: https://img.shields.io/npm/dm/koa-xtpl.svg
 [download-url]: https://npmjs.org/package/koa-xtpl
-[travis-image]: https://travis-ci.org/zce/koa-xtpl.svg?branch=master
+[travis-image]: https://travis-ci.org/zce/koa-xtpl.svg?branch=v2.x
 [travis-url]: https://travis-ci.org/zce/koa-xtpl
 [dependency-image]: https://david-dm.org/zce/koa-xtpl/status.svg
 [dependency-url]: https://david-dm.org/zce/koa-xtpl
@@ -20,7 +20,7 @@
 [style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [style-url]: http://standardjs.com/
 
-> A node.js wrapper around xtemplate engine (easier for Koa)
+> A node.js wrapper around xtemplate engine (easier for Koa 2)
 
 ## Install
 
@@ -58,27 +58,31 @@ app.listen(3000)
 
 ### xtpl(options)
 
-#### root
+#### options
+
+Type: `object`
+
+##### root
 
 Type: `string`
 
-#### extname
+##### extname
 
 Type: `string`
 
-#### strict
+##### strict
 
 Type: `boolean`
 
-#### catchError
+##### catchError
 
 Type: `boolean`
 
-#### cache
+##### cache
 
 Type: `boolean`
 
-#### encoding
+##### encoding
 
 Type: `string`<br>
 Default: `utf-8`
