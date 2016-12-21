@@ -1,14 +1,14 @@
 var path = require('path')
 var Koa = require('koa')
 var xtpl = require('../')
-var app = Koa()
+var app = new Koa()
 
 app.use(xtpl({ root: path.join(__dirname, 'views') }))
 
-app.use(function *() {
-  var html = yield this.render('demo', { title: new Date() }, false)
+app.use(async function (ctx) {
+  var html = await ctx.render('demo', { title: new Date() }, false)
   // console.log(html)
-  this.body = html
+  ctx.body = html
 })
 
 app.listen(3000)
