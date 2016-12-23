@@ -41,10 +41,16 @@ demo.js
 ```js
 const path = require('path')
 const Koa = require('koa')
-const xtpl = require('../')
+const xtpl = require('koa-xtpl')
 const app = new Koa()
 
-app.use(xtpl({ root: path.join(__dirname, 'views') }))
+// root
+app.use(xtpl(path.join(__dirname, 'views')))
+// or options
+app.use(xtpl({
+  root: path.join(__dirname, 'views'),
+  commands: {}
+}))
 
 app.use(async ctx => {
   await ctx.render('demo', { title: new Date() })
@@ -60,25 +66,23 @@ app.listen(3000)
 
 #### options
 
-Type: `object`
+Type: `object` or `string`
+
+Option or view root directory
 
 ##### root
 
 Type: `string`
 
+##### commands
+
+Type: `object`
+
 ##### extname
 
 Type: `string`
 
-##### strict
-
-Type: `boolean`
-
 ##### catchError
-
-Type: `boolean`
-
-##### cache
 
 Type: `boolean`
 
@@ -86,6 +90,14 @@ Type: `boolean`
 
 Type: `string`<br>
 Default: `utf-8`
+
+##### strict
+
+Type: `boolean`
+
+##### cache
+
+Type: `boolean`
 
 
 ## License

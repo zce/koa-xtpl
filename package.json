@@ -1,6 +1,6 @@
 {
   "name": "koa-xtpl",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "description": "A node.js wrapper around xtemplate engine (easier for Koa)",
   "main": "lib",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/zce/koa-xtpl#readme",
   "dependencies": {
-    "node-xtemplate": "^0.1.2"
+    "node-xtemplate": "^0.1.3"
   },
   "devDependencies": {
     "koa": "^2.0.0-alpha.7"
