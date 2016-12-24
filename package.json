@@ -4,7 +4,7 @@
   "description": "A node.js wrapper around xtemplate engine (easier for Koa)",
   "main": "lib",
   "scripts": {
-    "test": "node --harmony-async-await test/return.js"
+    "test": "node --harmony-async-await test"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/zce/koa-xtpl#readme",
   "dependencies": {
-    "node-xtemplate": "^0.1.3"
+    "node-xtemplate": "^0.1.5"
   },
   "devDependencies": {
     "koa": "^2.0.0-alpha.7"

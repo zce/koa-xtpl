@@ -49,6 +49,7 @@ app.use(xtpl(path.join(__dirname, 'views')))
 // or options
 app.use(xtpl({
   root: path.join(__dirname, 'views'),
+  extname: 'xtpl',
   commands: {}
 }))
 
