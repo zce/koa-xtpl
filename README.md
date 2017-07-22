@@ -25,7 +25,10 @@
 ## Install
 
 ```sh
-$ npm install --save koa-xtpl@next
+# npm
+$ npm install koa-xtpl --save
+# or yarn
+$ yarn add koa-xtpl
 ```
 
 
