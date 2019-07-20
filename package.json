@@ -32,6 +32,6 @@
     "node-xtemplate": "^0.1.6"
   },
   "devDependencies": {
-    "koa": "^2.3.0"
+    "koa": "2.3.0"
   }
 }
